@@ -1,0 +1,19 @@
+table{
+    border: solid green 5px;
+    text-align: center;
+}
+td,th{
+    padding: 10px;
+}
+th{
+    background-color: aqua;
+}
+th:hover{
+    background-color: black;
+    color: white;
+}
+.one{
+    background-color: black;
+    
+    color: white;
+}
