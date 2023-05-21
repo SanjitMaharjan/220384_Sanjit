@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .one1{
+            background: linear-gradient(to right,white,black,grey);
+        }
+        .container{
+          
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           align-items: center;
+           flex-wrap: wrap;
+        }
+        .container div{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container div:nth-of-type(odd){
+            /* margin: 10px; */
+           
+            border-radius: 20%;
+        }
+        .one1 div:nth-of-type(odd){
+            /* margin: 10px; */
+            border: 3px solid white;
+            background-color: black;
+            color: black;
+        }
+        .container div:nth-of-type(even){
+            /* margin: 10px; */
+            
+            border-radius: 20% 0%;
+        }
+        .one1 div:nth-of-type(even){
+            /* margin: 10px; */
+            border: 3px solid black;
+            background-color: white;
+            color: white;
+        }
+        button{
+            background-color: grey;
+            border-radius: 50%;
+            width: 90px;
+            height: 60px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            border: 3px solid black;
+            margin: 5px;
+            
+        }
+        .one div:nth-of-type(odd){
+            /* margin: 10px; */
+            border: 3px solid black;
+            background-color: white;
+            color: black;
+        }
+        .one div:nth-of-type(even){
+            /* margin: 10px; */
+            border: 3px solid white;
+            background-color: black;
+            color: white;
+        }
+        .one{
+            background: linear-gradient(to left,white,black,grey);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="containerid" class="container one1">
+        <div>Life</div>
+        <div>is</div>
+        <div>Not</div>
+        <div>What</div>
+        <div>I</div>
+        <div>thought</div>
+    </div>
+    <div class="container">
+       
+        <button onclick="two()">Click me</button> 
+        <button onclick="one()">Click me</button>
+    </div>
+    <script>
+        function one(){
+           document.getElementById("containerid").classList.remove('one1');
+           document.getElementById("containerid").classList.add('one');
+        }
+        function two(){
+           document.getElementById("containerid").classList.add('one1');
+           document.getElementById("containerid").classList.remove('one');
+        }
+    </script>
+</body>
+</html>
