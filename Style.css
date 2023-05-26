@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    float: right;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  @media screen and (max-width: 500px) {
+    nav li {
+      float: none;
+    }
+    nav li a {
+      display: block;
+      text-align: left;
+    }
+  }
+  

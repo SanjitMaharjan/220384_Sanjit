@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        img[src="Image1.jpg"]{
+            width: 220px;
+            height: 380px;
+            padding: 15px;
+            transition-duration: 1s;
+            opacity: 1;
+           /* transition-timing-function: linear; */
+        }
+        img[src="Image1.jpg"]:hover{
+            width: 250px;
+            height: 410px;
+            padding: 0px;
+           position: static;
+           opacity: 0.8;
+
+        }
+
+        @keyframes  img[src="Image1.jpg"] {
+  from {image}
+  to {background-color: yellow;}
+}
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <td> <a href="#">
+                <img src="Image1.jpg" alt="">
+            </a>
+            </td>
+            <td>
+                <img src="Image1.jpg" alt="">
+            </td>
+            <td>
+                <img src="Image1.jpg" alt="">
+            </td>
+         </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nursery ul li{
+    display: inline-block;
+    padding: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    color: white;
+}
+.pg{
+    background-color:white;
+    padding: auto;
+    color: black;
+    width: 75%;
+    display: inline-block;
+    font-size:30px;
+}
+.justborn{
+    background-color: aqua;
+    width: 100%;
+}
+.nursery ul li:hover{
+    background-color: black;
+   
+}
+.nursery{
+    text-align: right;
+    width: 24%;
+    display: inline-block;
+}

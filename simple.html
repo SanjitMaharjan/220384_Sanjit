@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode</title>
+    <style>
+        #container{
+            border: 2px solid firebrick;
+        }
+        .dark{
+            color: #fff;
+            background-color: rgb(25, 25, 25);
+        }
+        .change{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>One</h1>
+    
+    </div>
+    <button onclick="one()">Click</button>
+    <button onclick="two()">Click</button>
+    <button onclick="three()">Click</button>
+    <script>
+        function one(){
+            document.getElementById("container").classList.add('dark');
+        }
+        function two(){
+            document.getElementById("container").classList.add('change');
+        }
+        function three(){
+            document.getElementById("container").classList.remove('change','dark');
+        }
+    </script>
+</body>
+</html>
