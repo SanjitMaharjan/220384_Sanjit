@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .parent{
+                border: 1px solid red;
+                height: 200px;
+                width: 100%;
+            }
+            .b{
+                border: 1px solid green;
+                height: 80;
+                width: 80;
+            }
+            .one{
+               position: static;
+            }
+            .two{
+                position: fixed;
+                top: 50px;
+                left: 50px;
+            }
+            .three{
+                position: relative;
+                top: 50px;
+                left: 50px;
+            }
+            .four{
+                position: absolute;
+                top: 50px;
+                left: 10px;
+            }
+            .five{
+                position: sticky;
+                left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="b one">One</div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium magnam voluptas eveniet expedita ullam quisquam dolores, omnis dolor, unde nostrum tenetur officiis ea, necessitatibus iure. Hic animi cum quia tempora.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sequi labore, molestiae perferendis exercitationem tenetur culpa blanditiis. Corporis, eligendi, id omnis odit aperiam sint, et asperiores iusto expedita eos facere?
+            <div class="b two">Two</div>
+            <div class="b three">Three</div>
+            <div class="b four">Four</div>
+            <div class="b five">Five</div>
+        </div>
+    </body>
+</html>

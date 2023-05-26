@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Font</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>
+            p{
+                font-family: 'Montserrat', sans-serif;
+                
+            }
+            body{
+                background-image: radial-gradient(red,blue);
+                color: white;
+            }
+            div{
+                background-color: white;
+                color: white;
+                width: 150px;
+                height: 100px;
+                font-size: 30px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                animation-name: move-right;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+            }
+            div:hover{
+                width: 200px;
+                color: rgb(206, 202, 202);
+                transform: rotate(20deg);
+            }
+            @keyframes move-right {
+                from{
+                    left: 0;
+                }
+                to{
+                    left: 66vw;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>I don't have money.</p>
+        <pre>
+            If you have 
+            You can give me
+        </pre>
+        <div>
+            Paisaii xaina yarrr
+        </div>
+    </body>
+</html>

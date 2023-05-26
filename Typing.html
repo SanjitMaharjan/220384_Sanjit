@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Animation</title>
+    <style>
+        .container{
+            background-color: aqua;
+            padding: 10px;
+            border: 3px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .textbox{
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing;
+             animation-duration: 1.5s;
+             animation-timing-function: steps(30, end);
+             animation-fill-mode: forwards,blinking 1s infinite;;
+        }
+        @keyframes typing {
+            from{width: 0}
+            to{width: 100%;}
+        }
+        @keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: black}
+  100% {border-right-color: transparent}
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="textbox">
+            जिबन उसको अन्धकार हुदा म चै एऔता <span>जुन</span> थिए<br> 
+            सारै नै सजिलो रैक्ष सुर्य को किरण संगै जुन लाई भुल दिने
+        </p>
+    </div>
+</body>
+
+</html>
